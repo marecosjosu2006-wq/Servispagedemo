@@ -3,9 +3,218 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trabajo25</title>
+    <meta
+      name="description"
+      content="Descubre smartphones, accesorios y atención personalizada en MovilPoint."
+    />
+    <title>MovilPoint | Tu próximo celular te espera</title>
     <link href="./dist/styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <header class="border-b border-blue-100 bg-white">
+      <nav
+        aria-label="Navegación principal"
+        class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-4 sm:px-8 md:flex-row md:items-center md:justify-between"
+      >
+        <a href="#inicio" class="flex w-fit items-center gap-3" aria-label="MovilPoint, inicio">
+          <span class="flex size-11 items-center justify-center rounded-xl bg-blue-600 text-white shadow-lg shadow-blue-600/20">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="size-6"
+            >
+              <path
+                d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path
+                d="m8 10 4 2.25L16 10M12 12.25V17"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+          <span class="text-xl font-bold tracking-tight text-slate-900">Movil<span class="text-blue-600">Point</span></span>
+        </a>
+
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-3 md:gap-x-8">
+          <a href="#inicio" class="text-sm font-semibold text-blue-700">Inicio</a>
+          <a href="#acerca-de" class="text-sm font-medium text-slate-600 transition hover:text-blue-700">Acerca de</a>
+          <a href="#nosotros" class="text-sm font-medium text-slate-600 transition hover:text-blue-700">Nosotros</a>
+          <a
+            href="#contacto"
+            class="rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-blue-600/20 transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+          >
+            Contacto
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="relative isolate overflow-hidden bg-blue-950">
+        <img
+          src="./public/celular.jpg"
+          alt=""
+          aria-hidden="true"
+          class="absolute inset-0 -z-10 size-full object-cover object-center"
+        />
+        <div
+          aria-hidden="true"
+          class="absolute inset-0 -z-10 bg-linear-to-r from-blue-950/95 via-blue-900/80 to-blue-800/45"
+        ></div>
+        <div class="mx-auto max-w-7xl px-5 py-20 sm:px-8 sm:py-28">
+          <div>
+            <p class="mb-5 inline-flex rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-sm font-medium text-blue-50">
+              Bienvenido a MovilPoint
+            </p>
+            <h1 class="max-w-xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Encontrá el celular ideal para vos.
+            </h1>
+            <p class="mt-6 max-w-lg text-lg leading-8 text-blue-100">
+              Tecnología, diseño y asesoramiento personalizado para que elijas tu próximo smartphone con confianza.
+            </p>
+            <div class="mt-9 flex flex-wrap gap-4">
+              <a
+                href="#acerca-de"
+                class="rounded-lg bg-white px-5 py-3 text-sm font-semibold text-blue-700 shadow-lg transition hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-700"
+              >
+                Ver celulares
+              </a>
+              <a
+                href="#contacto"
+                class="rounded-lg border border-white/40 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white"
+              >
+                Hablemos
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="acerca-de" class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-sm font-bold uppercase tracking-widest text-blue-600">Elegí tu próximo equipo</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-900">Celulares destacados</h2>
+          <p class="mt-4 leading-7 text-slate-600">Modelos para cada estilo, con calidad y tecnología para acompañarte todos los días.</p>
+        </div>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/10">
+            <div class="flex h-52 items-center justify-center bg-linear-to-br from-blue-50 to-indigo-100">
+              <div class="relative h-40 w-20 rounded-[1.4rem] border-4 border-slate-800 bg-slate-950 p-1.5 shadow-lg">
+                <div class="h-full rounded-2xl bg-linear-to-br from-cyan-300 via-blue-500 to-indigo-700"></div>
+                <span class="absolute left-1/2 top-1.5 h-2 w-8 -translate-x-1/2 rounded-full bg-slate-950"></span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-xs font-bold uppercase tracking-widest text-blue-600">Rendimiento</p>
+              <h3 class="mt-2 text-xl font-bold text-slate-900">Nova X Pro</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Pantalla AMOLED, cámara de alta resolución y batería para todo el día.</p>
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <span class="text-lg font-bold text-slate-900">Consultar precio</span>
+                <a href="#contacto" class="rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/10">
+            <div class="flex h-52 items-center justify-center bg-linear-to-br from-sky-50 to-blue-100">
+              <div class="relative h-40 w-20 rounded-[1.4rem] border-4 border-slate-800 bg-slate-950 p-1.5 shadow-lg">
+                <div class="h-full rounded-2xl bg-linear-to-br from-emerald-300 via-teal-500 to-blue-700"></div>
+                <span class="absolute left-1/2 top-1.5 h-2 w-8 -translate-x-1/2 rounded-full bg-slate-950"></span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-xs font-bold uppercase tracking-widest text-blue-600">Para todos los días</p>
+              <h3 class="mt-2 text-xl font-bold text-slate-900">Nova Air</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Diseño liviano, excelente autonomía y todo lo que necesitás para tu rutina.</p>
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <span class="text-lg font-bold text-slate-900">Consultar precio</span>
+                <a href="#contacto" class="rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/10">
+            <div class="flex h-52 items-center justify-center bg-linear-to-br from-indigo-50 to-violet-100">
+              <div class="relative h-40 w-20 rounded-[1.4rem] border-4 border-slate-800 bg-slate-950 p-1.5 shadow-lg">
+                <div class="h-full rounded-2xl bg-linear-to-br from-fuchsia-300 via-violet-500 to-indigo-800"></div>
+                <span class="absolute left-1/2 top-1.5 h-2 w-8 -translate-x-1/2 rounded-full bg-slate-950"></span>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-xs font-bold uppercase tracking-widest text-blue-600">Creatividad</p>
+              <h3 class="mt-2 text-xl font-bold text-slate-900">Nova Studio</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Capturá tus mejores momentos con una cámara versátil y colores increíbles.</p>
+              <div class="mt-5 flex items-center justify-between gap-3">
+                <span class="text-lg font-bold text-slate-900">Consultar precio</span>
+                <a href="#contacto" class="rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700">Consultar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="nosotros" class="border-y border-blue-100 bg-white">
+        <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <p class="text-sm font-bold uppercase tracking-widest text-blue-600">Nosotros</p>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight text-slate-900">Tecnología con atención humana</h2>
+            <p class="mt-4 leading-7 text-slate-600">Te ayudamos a comparar opciones y encontrar el equipo que mejor se adapta a vos, con asesoramiento cercano antes y después de tu compra.</p>
+          </div>
+          <div class="mt-12">
+            <div class="text-center">
+              <p class="text-sm font-bold uppercase tracking-widest text-blue-600">Testimonios</p>
+              <h3 class="mt-2 text-2xl font-bold tracking-tight text-slate-900">Experiencias que nos inspiran</h3>
+              <p class="mt-2 text-sm text-slate-500">Testimonios de ejemplo: reemplazalos por opiniones reales de tus clientes.</p>
+            </div>
+            <div class="mt-7 grid gap-5 md:grid-cols-3">
+              <figure class="rounded-2xl border border-blue-100 bg-slate-50 p-6">
+                <div class="text-lg tracking-widest text-amber-400" aria-label="5 de 5 estrellas">★★★★★</div>
+                <blockquote class="mt-3 text-sm leading-6 text-slate-600">“Me asesoraron con paciencia y encontré justo el celular que necesitaba para trabajar.”</blockquote>
+                <figcaption class="mt-5 font-semibold text-slate-900">Cliente de MovilPoint</figcaption>
+              </figure>
+              <figure class="rounded-2xl border border-blue-100 bg-slate-50 p-6">
+                <div class="text-lg tracking-widest text-amber-400" aria-label="5 de 5 estrellas">★★★★★</div>
+                <blockquote class="mt-3 text-sm leading-6 text-slate-600">“La atención fue excelente. Me explicaron las diferencias entre los modelos sin apuro.”</blockquote>
+                <figcaption class="mt-5 font-semibold text-slate-900">Cliente de MovilPoint</figcaption>
+              </figure>
+              <figure class="rounded-2xl border border-blue-100 bg-slate-50 p-6">
+                <div class="text-lg tracking-widest text-amber-400" aria-label="5 de 5 estrellas">★★★★★</div>
+                <blockquote class="mt-3 text-sm leading-6 text-slate-600">“Pude consultar, elegir y resolver todo fácilmente. Volvería a comprar.”</blockquote>
+                <figcaption class="mt-5 font-semibold text-slate-900">Cliente de MovilPoint</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="mx-auto max-w-7xl px-5 py-16 text-center sm:px-8">
+        <div class="rounded-3xl bg-linear-to-br from-blue-600 to-indigo-800 px-6 py-12 shadow-xl shadow-blue-900/15 sm:px-12">
+          <p class="text-sm font-bold uppercase tracking-widest text-blue-100">Contacto</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight text-white">¿Buscás tu próximo celular?</h2>
+          <p class="mx-auto mt-4 max-w-xl leading-7 text-blue-100">Escribinos y te ayudamos a encontrar el equipo ideal. Respondemos tus consultas sobre modelos, disponibilidad y accesorios.</p>
+          <a href="mailto:hola@movilpoint.com" class="mt-7 inline-flex rounded-lg bg-white px-5 py-3 text-sm font-semibold text-blue-700 shadow-md transition hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-700">
+            Contactanos
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-950 text-blue-100">
+      <div class="mx-auto grid max-w-7xl gap-8 px-5 py-10 sm:px-8 md:grid-cols-3 md:items-center">
+        <a href="#inicio" class="text-xl font-bold tracking-tight text-white">Movil<span class="text-blue-400">Point</span></a>
+        <nav aria-label="Navegación del pie de página" class="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+          <a href="#inicio" class="transition hover:text-white">Inicio</a>
+          <a href="#acerca-de" class="transition hover:text-white">Celulares</a>
+          <a href="#nosotros" class="transition hover:text-white">Nosotros</a>
+          <a href="#contacto" class="transition hover:text-white">Contacto</a>
+        </nav>
+        <p class="text-sm text-blue-200 md:text-right">© 2026 MovilPoint. Todos los derechos reservados.</p>
+      </div>
+    </footer>
   </body>
 </html>
